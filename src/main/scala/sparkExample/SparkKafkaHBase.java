@@ -1,17 +1,17 @@
 package sparkExample
 
-import kafka.serializer.{DefaultDecoder, StringDecoder}
+import kafka.serializer.{DefaultDecoder,StringDecoder}
 import org.apache.hadoop.conf.Configuration
 import org.apache.hadoop.hbase.HBaseConfiguration
-import org.apache.hadoop.hbase.client.{HTableInterface, HConnectionManager, HConnection, Put}
+import org.apache.hadoop.hbase.client.{HTableInterface,HConnectionManager,HConnection,Put}
 import org.apache.hadoop.hbase.mapreduce.TableOutputFormat
 import org.apache.hadoop.hbase.util.Bytes
-import org.apache.hadoop.io.{LongWritable, Text}
+import org.apache.hadoop.io.{LongWritable,Text}
 import org.apache.spark.SparkConf
 import org.apache.spark.rdd.PairRDDFunctions
 import org.apache.spark.storage.StorageLevel
-import org.apache.spark.streaming.kafka.{HasOffsetRanges, KafkaUtils}
-import org.apache.spark.streaming.{Minutes, Seconds, StreamingContext}
+import org.apache.spark.streaming.kafka.{HasOffsetRanges,KafkaUtils}
+import org.apache.spark.streaming.{Minutes,Seconds,StreamingContext}
 
 
 /**
